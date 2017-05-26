@@ -65,6 +65,9 @@ class WeatherViewController: UIViewController {
         if (text.isEmpty)
         {
             print("User did not enter a location.")
+            
+            // Create an alert view with an error so the user knows to enter a location.
+            AlertHelper.ShowError(view: self, description: "Please enter a location!")
             return
         }
     }
