@@ -15,9 +15,32 @@ import Foundation
 class Weather
 {
     
+    init()
+    {
+        temp = Temperature()
+        
+        loc = Location()
+        
+        wind = Wind()
+        
+        pressure = 0.0
+        
+        humidity = 0.0
+        
+        visibility = 0
+    }
+    
     /// Information about temperature variables
     class Temperature
     {
+        
+        init()
+        {
+            high = 0.0
+            low = 0.0
+            currentTemp = 0.0
+        }
+        
         /// The forecasted highest possible temperature, in Kelvin
         var high: Float?
         
@@ -31,6 +54,15 @@ class Weather
     /// Information about the location of the weather conditions
     class Location
     {
+        init()
+        {
+            city = ""
+            lat = 0.0
+            long = 0.0
+            countryCode = ""
+            id = 0
+        }
+        
         /// The name of the city
         var city: String?
         
@@ -51,6 +83,12 @@ class Weather
     class Wind
     {
         
+        init()
+        {
+            degrees = 0.0
+            speed = 0.0
+        }
+        
         /// The direction the wind is blowing, in meteorological degrees
         var degrees: Float?
         
@@ -58,6 +96,16 @@ class Weather
         var speed: Float?
         
     }
+    
+    
+    /// Temperature information, in kelvin.
+    var temp: Temperature?
+    
+    /// Location information.
+    var loc: Location?
+    
+    /// Wind information.
+    var wind: Wind?
     
     /// The current barometric pressure, in hectopascals
     var pressure: Float?
