@@ -8,9 +8,6 @@
 //  Stores information about the current weather conditions for a specified area.
 //
 
-import Foundation
-
-
 /// Information about the current weather conditions for a specified location
 class Weather
 {
@@ -37,7 +34,9 @@ class Weather
         init()
         {
             high = 0.0
+            
             low = 0.0
+            
             currentTemp = 0.0
         }
         
@@ -57,9 +56,13 @@ class Weather
         init()
         {
             city = ""
+            
             lat = 0.0
+            
             long = 0.0
+            
             countryCode = ""
+            
             id = 0
         }
         
@@ -86,6 +89,7 @@ class Weather
         init()
         {
             degrees = 0.0
+            
             speed = 0.0
         }
         

@@ -1,6 +1,6 @@
 //
 //  AlertHelper.swift
-//  Convert Master
+//  Hunter Stanton
 //
 //  Created by Hunter Stanton on 10/5/16.
 //  Copyright © 2016 Hunter Stanton. All rights reserved.

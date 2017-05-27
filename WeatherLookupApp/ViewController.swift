@@ -46,6 +46,7 @@ class WeatherViewController: UIViewController {
         LocationTextField.layer.cornerRadius = 5.0
         LocationTextField.layer.borderColor = UIColor.blue.cgColor
         LocationTextField.layer.borderWidth = 2.0
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -70,6 +71,8 @@ class WeatherViewController: UIViewController {
             AlertHelper.ShowError(view: self, description: "Please enter a location!")
             return
         }
+        
+        
     }
     
     // MARK: - Touch related functions
