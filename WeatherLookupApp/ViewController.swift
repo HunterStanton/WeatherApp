@@ -82,6 +82,14 @@ class WeatherViewController: UIViewController {
         view.endEditing(true)
         super.touchesBegan(touches, with: event)
     }
+    
+    // MARK: - Table view functions
+    
+    /// Populates the tableview with weather information
+    func PopulateTableWithWeatherInfo()
+    {
+        
+    }
 
 
 }
