@@ -20,7 +20,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var WeatherIconView: UIImageView!
     
     /// The tableview that shows information about the current weather conditions.
-    @IBOutlet weak var WeatherConditionsView: UITableView!
+    @IBOutlet weak var WeatherConditionsView: UIScrollView!
     
     /// A label that helps the user determine what the input field below is for.
     @IBOutlet weak var LocationNameLabel: UILabel!
@@ -30,7 +30,6 @@ class WeatherViewController: UIViewController {
     
     /// The button that initiates the weather conditions lookup on press.
     @IBOutlet weak var LookupButton: UIButton!
-    
     
     
     // MARK: - View state functions
@@ -46,6 +45,7 @@ class WeatherViewController: UIViewController {
         LocationTextField.layer.cornerRadius = 5.0
         LocationTextField.layer.borderColor = UIColor.blue.cgColor
         LocationTextField.layer.borderWidth = 2.0
+        
         
     }
 
